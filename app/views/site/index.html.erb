@@ -1,0 +1,20 @@
+<div class="container">
+	<table class='table'>
+		<thead>
+		<tr>
+			<th>Artist</th>
+			<th>Venue</th>
+			<th>Date</th>
+		</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<% @concerts.each do |concert| %>
+				<td><%= concert.artist %></td>
+				<td><%= concert.venue %></td>
+				<td><%= concert.date %></td>
+			</tr>
+				<% end %>
+		</tbody>
+	</table>
+</div>
